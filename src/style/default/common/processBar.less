@@ -1,0 +1,38 @@
+//网络加载条
+.ymt-processbar {
+    position: fixed;
+    top: 4.4rem;
+    left: 0;
+    width: 0;
+    height: 6/20rem;
+    background: #FF7800;
+    z-index: 999;
+}
+@keyframes loadingPart {
+    0% {
+        width: 0;
+    }
+    40% {
+        width: 10%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+@keyframes loadingAll {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.ymt-processbar-part {
+    width: 30%;
+    animation: loadingPart linear 1.5s;
+    animation-fill-mode: forwards;
+}
+.ymt-processbar-all {
+    width: 0;
+    animation: loadingAll ease-in 1s;
+}

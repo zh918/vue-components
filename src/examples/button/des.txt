@@ -1,0 +1,24 @@
+组件名称：YmtButton
+
+样式说明：
+1.ymt-btn
+2.ymt-btn-small
+3.ymt-btn-big
+4.btn-success
+5.btn-danger
+...
+
+事件绑定
+@click="自定义事件"
+
+属性说明：
+
+
+常见用法
+<ymt-button @click="handleClick" class="ymt-btn-big">测试按钮</ymt-button>
+
+更新日志：
+2017-06-12
+1。。。。
+2。。。。
+

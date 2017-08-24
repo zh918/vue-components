@@ -1,0 +1,216 @@
+@keyframes car-move {
+	from {top:66.7rem;opacity: 0;}
+	to {top:0; opacity: 1}
+}
+
+.ymt-cars {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 3000;
+	background-color: #aeaeae;
+	animation:car-move 300ms 1;  
+
+	.title {
+		position: relative;
+		height: 80/20rem;
+		line-height: 80/20rem;
+		font-size: 30/20rem;
+		color: #2d2d2d;
+		text-align: center;
+		background-color: #fff;
+
+		.close {
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			bottom: 0;
+			right: 24/20rem;
+			width: 24/20rem;
+			height: 80/20rem;
+			line-height: 80/20rem;
+			margin: auto;
+
+			i {
+				width: 24/20rem;
+				height: 24/20rem;
+				font-size: 24/20rem;
+			}
+		}
+	}
+
+	.content {
+		position: fixed;
+		top: 80/20rem;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		/*height: 62.3rem;*/
+		padding: 1rem 24/20rem;
+		overflow: auto;
+		background-color: #eaeaea;
+
+		.item {
+			position: relative;
+			width: 100%;
+			min-height: 100/20rem;
+			max-height: 200/20rem;
+			margin: 0 0 1rem 0;
+
+			background-color: #fff;
+			border-radius: 10/20rem;
+
+			.left {
+				 position: absolute;
+				 display: inline-block;
+				 top: 0;
+				 bottom: 0;
+				 left: 0;
+				 width: 134/20rem;
+				 text-align: center;
+				 margin: auto 0;
+
+				/*.left-check {					
+					  height: 100%;
+					  line-height: 100%;
+
+					  input {
+					 	width: 36/20rem;
+					 	height: 36/20rem;
+					 }
+				}*/
+
+				/*input {
+					height: 1.8rem;
+					line-height: 1.8rem;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+					width: 100%;
+				} */
+
+				.payment-radio-item{
+					align-items: center;
+					justify-content: space-between;
+					display: flex;
+					padding: 24/20rem;
+					border-top: 1px solid #e0e0e0;
+					border-bottom: 1px solid #e0e0e0;
+					height: 100%;
+					border:none;
+				}
+				.payment-radio-item:first-of-type{
+					border-bottom: none;
+				}
+				.payment-icon{
+					display: flex;
+					align-items: center;
+				}
+				.payment-icon img{
+					width: 64/20rem;
+					height: 64/20rem;
+					margin-right: 24/20rem;
+				}
+				
+				.ymt-radios{
+					font-size: 30/20rem;
+				}
+				.payment-radio .icon{
+					font-size: 36/20rem;
+				}
+				.payment-radio .icon-check02{
+					color: #FF7800;
+				}
+				.payment-radio .icon-uncheak02{
+					color: #aeaeae;
+				}
+				.payment-radio input{
+					display: none;
+				}
+
+			}
+
+			
+			
+			.right {
+				position: relative;
+				display: inline-block;
+				top: 0;
+				bottom: 0;
+				left: 134/20rem;	
+				width: 532/20rem;
+				
+				.title-img {
+					float: left;
+					width: 128/20rem;
+					height: 44/20rem; 
+					margin: auto auto auto 28/20rem;
+					background-image: url(../../../assets/images/cars/common_car@2x.png);
+					background-size: cover;
+				}
+
+				.right-two {
+					.right-item {
+						height: 100/20rem; 
+
+						:first-child {
+							float:left;
+						} 
+					}
+
+					.main {
+						padding:44/20rem 0 0 0;
+						font-size:30/20rem;
+						color: #2d2d2d;
+						
+					}
+
+					.sub {
+						padding: 24/20rem 0 0 0;
+						border-top: 1px solid #e0e0e0;
+						font-size: 24/20rem;
+						color: #626262;
+
+					}
+				}
+
+				.right-one {
+					height: 100/20rem;
+					line-height: 100/20rem;
+
+					.right-item { 
+						:first-child {
+							/*float:left;*/
+							display:inline-block;
+						}
+						:last-child{
+							position: relative; 
+							display: inline-block; 
+							width: 20%;
+
+							div {
+								position: absolute;
+								bottom: 0;								
+								width: 128/20rem;
+								height: 44/20rem; 
+								margin: auto auto auto 28/20rem;
+							}
+						}
+					}
+					.main-one { 
+						font-size:30/20rem;
+						color: #2d2d2d;
+					}
+				}
+
+							
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.shade {
+	.shade-content {
+		position: relative; 
+		opacity: .9;
+		z-index: 3000;
+
+	}
+	.shade-bg {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background-color: #000;
+		opacity: .8;
+		z-index: 2000
+	}
+
+	&.hide {
+		opacity: 0;
+	}
+}

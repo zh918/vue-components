@@ -1,0 +1,38 @@
+.checkbox-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox-wrapper input {
+    display: none;
+}
+
+.ymt-checkbox {
+    position: relative;
+    width: 42/20rem;
+    height: 42/20rem;
+    border: 1px solid #ccc;
+    border-radius: 5/20rem;
+    display: flex;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    text-align: center;
+    &.checked {
+        color: #fff;
+        transition: all 0.3s;
+        background-color: #ff9600;
+        border: 1px solid #ff9600;
+    }
+    &.un-checked {
+        background: #fff;
+        .iconfont {
+            visibility: hidden;
+        }
+    }
+}
+
+.ymt-checkbox .iconfont {
+    font-size: 34/20rem;
+    color: #FFFFFF;
+}

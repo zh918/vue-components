@@ -1,0 +1,76 @@
+@keyframes show {
+	from {opacity: 0;}
+	to {opacity: 1}
+}
+
+.ymt-message {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0; 
+	height: 77/20rem;
+	max-width: 80%;
+	margin: auto; 
+	text-align: center;
+	z-index: 5000;
+	/*animation:show 300ms 1; */
+
+	& > .content {
+		width: 230/20rem;
+		height: 230/20rem;
+		margin: 0 auto;
+		border-radius: 10/20rem;
+		background-color: #000;
+		opacity: .8;
+
+
+		.div-icon {
+			width: 64/20rem;
+			height: 118/20rem;
+			margin: 0 auto;
+			padding: 54/20rem 0 0 0;
+			text-align: center;
+			color: #fff;
+			i {
+				font-size: 64/20rem;
+			}
+		}
+
+		.div-space {
+			height: 60/20rem;
+		}
+
+		.div-img {
+			width: 80/20rem;
+			height: 48/20rem;
+			margin: 0 auto;
+			padding: 60/20rem 0 0 0;
+			text-align: center;	
+			background-position:center;
+			background-size:cover;
+			background-image: url('../../../assets/images/cars/loading@2x.gif');		
+
+		}
+
+		span {
+			display: inline-block;
+			margin: 20/20rem 0 54/20rem 0;
+			color: #fff;
+			font-size: 30/20rem;
+		}
+
+	}
+
+	
+	& > span {
+		display: inline-block;
+		padding: 24/20rem 32/20rem;
+		font-size: 22/20rem;
+		color: #fff;
+		border-radius: 10/20rem;
+		background-color: #000;
+		opacity: .8;
+	}
+
+}

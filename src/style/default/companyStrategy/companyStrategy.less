@@ -1,0 +1,106 @@
+
+.ymt-company-strategy {
+    /*保险公司模块*/
+    .type-list {
+        width: 100%;
+        padding: 0 24/20rem 24/20rem;
+        position: relative;
+    }
+    .type-list.centeralign {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: -webkit-flex;
+        -webkit-justify-content: space-around;
+        -webkit-flex-wrap: wrap;
+    }
+    .type-list.normalalign .company-log {
+        float: left;
+    }
+    .type-list.normalalign .company-log:nth-of-type(3n+2) {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .company-log {
+        width: 30%;
+    }
+    .img-box {
+        position: relative;
+        text-align: center;
+        .selected-status {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 32/20rem;
+            height: 32/20rem;
+            background: url("../../../assets/images/quotation/check03@2x.png") no-repeat center;
+            background-size: 32/20rem 32/20rem;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: 80/20rem;
+            margin: 0 auto;
+        }
+    }
+    .activeBorder {
+        border: 1px solid #FF9600;
+    }
+    .normalBorder {
+        border: 1px solid #E0E0E0;
+    }
+    .bottom-triangle {
+        position: absolute;
+        left: 50%;
+        top: -0.8rem;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-top: .8rem solid #333;
+        border-left: .8rem solid transparent;
+        border-right: .8rem solid transparent;
+    }
+    .company-txt {
+        position: absolute;
+        bottom: 6rem;
+        max-width: 90%;
+        background: #333;
+        padding: 15/20rem 20/20rem;
+        border-radius: 5/20rem;
+        min-width: 30%;
+        z-index: 101;
+    }
+    .company-txt-wrap {
+        width: auto;
+        color: #fff;
+        font-size: 22/20rem;
+        line-height: 22/20rem;
+        max-height: 33/20rem;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+    .company-close {
+        position: absolute;
+        display: block;
+        right: -13/20rem;
+        top: -13/20rem;
+        width: 26/20rem;
+        height: 26/20rem;
+        background: url(../../../assets/images/quotation/close@2x.png);
+        background-size: 100% 100%;
+    }
+    .company-txt.left {
+        left: 24/20rem;
+    }
+    .company-txt.center {
+        left: 50%;
+    }
+    .company-txt.right {
+        right: 30/20rem;
+    }
+}
