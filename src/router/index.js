@@ -19,6 +19,7 @@ import cars from './map/cars'
 import message from './map/message'
 import tip from './map/tip'
 import viewImage from './map/viewImage'
+import file from './map/file'
 
 export default new Router({
 	mode:'history',
@@ -40,7 +41,8 @@ export default new Router({
 		cars,
 		message,
 		tip,
-		viewImage
+		viewImage,
+		file
 	]
 })
 

@@ -33,6 +33,7 @@ import message from './common/message/message'
 import tip from './common/tip/tip'
 import viewImage from './common/viewImage/viewImage'
 import NoNetwork from './common/NoNetwork/noNetwork'
+import uploadImg from './common/file/uploadImg'
 
 const YmtUI = {
 	version:'1.0.0',
@@ -60,7 +61,8 @@ const YmtUI = {
 	message:Vue.use(message),
 	tip,
 	viewImage,
-	noNetwork:Vue.use(NoNetwork)
+	noNetwork:Vue.use(NoNetwork),
+	uploadImg
 }
 
 export default YmtUI

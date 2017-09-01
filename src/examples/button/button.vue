@@ -1,7 +1,7 @@
 <template>
 <div>
-   <ymt-button @click="handleClick" :disable="flag">测试按钮</ymt-button> 
-  
+   <ymt-button @click="handleClick" @dbclick="handleDoubleClick" :disable="flag">测试按钮</ymt-button> 
+  <input type="file" id="input"> 上传
   <!-- <view-image></view-image> -->
 
    <div class="des">
@@ -48,7 +48,10 @@ export default {
     methods:{
     	handleClick(){
     		console.log('handleClick-use'); 
-    	} 
+    	},
+      handleDoubleClick() {
+        console.log('handleDoubleClick')
+      }
     }
 }
 </script>
