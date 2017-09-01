@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div v-for="(item,index) in testData" class="ymt-radios coupon-wrapper" @click="radioClick">
+		<div v-for="(item,index) in testData" class="lt-radios coupon-wrapper" @click="radioClick">
 			<label :for="item.value">
 				<i class="icon iconfont" :class="[item.ifChoose ? 'icon-check02' : 'icon-uncheak02']"></i>
 				<input :id="item.value" :value="item.value" type="radio" v-model="itemChoose" name="ymtradio"/>
@@ -20,7 +20,7 @@
 	// 模块引入
 	// 对象接口
 	import Vue from 'vue'
-	export default Vue.component('ymt-radios',{
+	export default Vue.component('lt-radios',{
 		props:{
 			// 父级传入属性
 	  	},
@@ -79,26 +79,26 @@
 
 </script>
 <style lang="less" scoped>
-	.ymt-radios{
+	.lt-radios{
 		font-size: 1.5rem;
 	}
-	.ymt-radios .icon{
+	.lt-radios .icon{
 		font-size: 1.8rem;
 	}
-	.ymt-radios .icon-check02{
+	.lt-radios .icon-check02{
 		color: #FF7800;
 	}
-	.ymt-radios .icon-uncheak02{
+	.lt-radios .icon-uncheak02{
 		color: #aeaeae;
 	}
-	.ymt-radios input{
+	.lt-radios input{
 		display: none;
 	}
 
 	.coupon-wrapper{
 		padding: 24/20rem 24/20rem 0;
 	}
-	.ymt-radios label{
+	.lt-radios label{
 		display: flex;
 		align-items: center;
 		display: -webkit-flex;

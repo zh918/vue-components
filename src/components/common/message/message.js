@@ -23,7 +23,7 @@ export default class Message {
 						}, options);
 
 			let messageRoot= document.createElement('div');
-			messageRoot.className="ymt-message";
+			messageRoot.className="lt-message";
 			let message = document.createElement('span'); 
 			if (message.insertAdjacentText) {
 				message.insertAdjacentText("afterbegin",options.msg); 
@@ -85,7 +85,7 @@ export default class Message {
    				
 			}
 			
-			if (document.querySelector(".ymt-message")) document.querySelector(".ymt-message").remove();
+			if (document.querySelector(".lt-message")) document.querySelector(".lt-message").remove();
 
 			if (document.getElementById("app").insertAdjacentElement) {
 				document.getElementById("app").insertAdjacentElement("afterbegin",messageRoot); 
@@ -96,14 +96,14 @@ export default class Message {
 		 
 			if (options.duration) {
 				setTimeout(function() {
-					if (document.querySelector(".ymt-message")) document.querySelector(".ymt-message").remove();
+					if (document.querySelector(".lt-message")) document.querySelector(".lt-message").remove();
 					if (options.cb != undefined) options.cb();
 				},options.duration); 
 			}	
 		}; 
 
 		Vue.prototype.$message.hide = () => {
-			document.querySelector(".ymt-message").remove();
+			document.querySelector(".lt-message").remove();
 		}
 
 

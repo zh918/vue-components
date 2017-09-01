@@ -1,6 +1,6 @@
 <template>
 <div>
-   <ymt-button @click="handleClick" @dbclick="handleDoubleClick" :disable="flag">测试按钮</ymt-button> 
+   <lt-button @click="handleClick" @dbclick="handleDoubleClick" :disable="flag">测试按钮</lt-button> 
   <input type="file" id="input"> 上传
   <!-- <view-image></view-image> -->
 
@@ -11,8 +11,8 @@
 组件名称：YmtButton
 
 样式说明：
-1.ymt-btn
-2.ymt-btn-default
+1.lt-btn
+2.lt-btn-default
 
 事件绑定：
 @click="自定义事件"
@@ -37,9 +37,9 @@ import ViewImage from './children/viewImage.vue'
 export default { 
 	data(){
 		return {
-			rawHtml:`      <ymt-button @click="handleClick">
+			rawHtml:`      <lt-button @click="handleClick">
         测试按钮
-      </ymt-button>`,
+      </lt-button>`,
       id:11,
       flag:false
 		}

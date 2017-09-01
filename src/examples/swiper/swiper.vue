@@ -1,17 +1,17 @@
 <template>
     <div class="swiper-full-content">
-        <ymt-swiper @Swiper="getSwiper" :dataList="protectList">
+        <lt-swiper @Swiper="getSwiper" :dataList="protectList">
             <div class="swiper-slide" v-for="(value,key) in protectList">
                 <div class="slide-box" v-if="value.type==1">固定套餐</div>
                 <div class="slide-box" v-if="value.type==2">自定义套餐</div>
             </div>
-        </ymt-swiper>
-        <ymt-button @click="getIndex">获取第几个</ymt-button>
+        </lt-swiper>
+        <lt-button @click="getIndex">获取第几个</lt-button>
         <div class="des">
             <h3>组件说明</h3>
             <p>
                 <pre>
-  组件名称：ymt-swiper
+  组件名称：lt-swiper
 
   样式说明：
   1.swiper内部样式
@@ -34,11 +34,11 @@
     export default {
         data() {
             return {
-                rawHtml: `<ymt-swiper>
+                rawHtml: `<lt-swiper>
             <div class="swiper-slide" v-for="(value,key) in protectList">
                 <div class="slide-box">固定套餐</div>
             </div>
-        </ymt-swiper>`,
+        </lt-swiper>`,
                 protectList:[],
                 swiper:"",
             }

@@ -1,14 +1,14 @@
 <!-- 通用组件 -->
 <template>  		
 	<div v-if="disable"
-		class="ymt-btn ymt-btn-default ymt-btn-disabled"> 
+		class="lt-btn lt-btn-default lt-btn-disabled"> 
 		<slot></slot>
 	</div>
 	<div v-else
 		@click="handleClick"  
 		@touchstart="touchstart" 
 		@touchend="touchend"
-		class="ymt-btn ymt-btn-default">
+		class="lt-btn lt-btn-default">
 		<slot></slot>
 	</div>
 
@@ -17,8 +17,8 @@
 <script type="text/javascript">
 	import Vue from 'vue'
 
-	export default Vue.component('ymt-button',{
-		name:'YmtButton', 
+	export default Vue.component('lt-button',{
+		name:'LtButton', 
 		props:['disable'],
 		methods:{
 			handleClick(e) {  

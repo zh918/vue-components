@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <ymt-company-strategy :supplierArrays="companyListss" @supplierSelect="supplierSelect" @closeTxt="closeTxt"></ymt-company-strategy>
+        <lt-company-strategy :supplierArrays="companyListss" @supplierSelect="supplierSelect" @closeTxt="closeTxt"></lt-company-strategy>
 
         <div class="des">
             <h3>组件说明</h3>
@@ -10,7 +10,7 @@
   组件名称：YmtCompanyStrategy
 
   样式说明：
-  1.ymt-company-strategy
+  1.lt-company-strategy
 
   事件绑定：
 	@supplierSelect 选择保险公司事件
@@ -35,7 +35,7 @@
     export default {
         data() {
             return {
-                rawHtml: `<ymt-company-strategy :supplierArrays="companyList"></ymt-company-strategy>`,
+                rawHtml: `<lt-company-strategy :supplierArrays="companyList"></lt-company-strategy>`,
                 companyListss: [],
             }
         },

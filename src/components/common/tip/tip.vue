@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="ymt-tip" :class="{'quote-tip':tipData == 'quoteTip','succ-quote-tip':tipData == 'succQuoteTip'}">
+        <div class="lt-tip" :class="{'quote-tip':tipData == 'quoteTip','succ-quote-tip':tipData == 'succQuoteTip'}">
             <slot></slot>
         </div>
     </div>
@@ -8,8 +8,8 @@
 <script>
     import Vue from 'vue'
 
-    export default Vue.component("ymt-tip", {
-        name: "YmtTip",
+    export default Vue.component("lt-tip", {
+        name: "LtTip",
         props: ['tipData'],
         data() {
             return {

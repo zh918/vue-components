@@ -1,5 +1,5 @@
 <template>
-	<div class="ymt-radios">
+	<div class="lt-radios">
 
 		<label for="weixin" class="payment-radio-item">
 			<div class="payment-icon">
@@ -29,7 +29,7 @@
 	// 模块引入
 	// 对象接口
 	import Vue from 'vue'
-	export default Vue.component('ymt-payment-radio',{
+	export default Vue.component('lt-payment-radio',{
 		props:{
 			initialOption:{
 				default : 'weixin',
@@ -89,19 +89,19 @@
 		margin-right: 24/20rem;
 	}
 
-	.ymt-radios{
+	.lt-radios{
 		font-size: 1.5rem;
 	}
-	.ymt-radios .icon{
+	.lt-radios .icon{
 		font-size: 1.8rem;
 	}
-	.ymt-radios .icon-check02{
+	.lt-radios .icon-check02{
 		color: #FF7800;
 	}
-	.ymt-radios .icon-uncheak02{
+	.lt-radios .icon-uncheak02{
 		color: #aeaeae;
 	}
-	.ymt-radios input{
+	.lt-radios input{
 		display: none;
 	}
 </style>

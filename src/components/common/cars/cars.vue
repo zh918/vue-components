@@ -1,10 +1,10 @@
 <template>
-	<div class="ymt-cars" v-if="initData.isShow">
+	<div class="lt-cars" v-if="initData.isShow">
 		<div class="title">切换车辆<span class="close" @click="handleClose"><i class="icon iconfont icon-chacha"></i></span></div>
 		<div class="content">
 
 			<div class="item" key="index" v-for="(item,index) in initData.data"  @click="handleChange(item)">
-				<div class="left ymt-radios">  
+				<div class="left lt-radios">  
 					<label for="weixin" class=" payment-radio-item"> 
 						<div class="payment-radio" >
 							<i class="icon iconfont" :class="item.actived ? 'icon-check02' : 'icon-uncheak02'"></i> 
@@ -35,8 +35,8 @@
 	
 	import Vue from 'vue'
 
-	export default Vue.component("YmtCars",{
-		name:"YmtCars",
+	export default Vue.component("LtCars",{
+		name:"LtCars",
 		props:['initData'], 
 		methods: {
 			handleChange(item) {

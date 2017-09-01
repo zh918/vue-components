@@ -8,8 +8,8 @@
 </template>
 <script>
 	import Vue from 'vue'
-	export default Vue.component("YmtShade",{
-		name:"YmtShade",
+	export default Vue.component("LtShade",{
+		name:"LtShade",
 		methods: {
 			handleTouch() {
 				debugger

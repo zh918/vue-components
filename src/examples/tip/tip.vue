@@ -1,16 +1,16 @@
 <template>
     <div>
 
-        <ymt-tip>
+        <lt-tip>
             按实际的垃圾收到了家山莨菪碱拉睡觉的的开发的师疯狂阿萨德接口联调发几个都改了
-        </ymt-tip>
+        </lt-tip>
 
-        <!--<ymt-tip :tipData="'quoteTip'"> 啊车牌号啊睡觉的垃圾
-        </ymt-tip>-->
+        <!--<lt-tip :tipData="'quoteTip'"> 啊车牌号啊睡觉的垃圾
+        </lt-tip>-->
 
-        <!--<ymt-tip :tipData="'succQuoteTip'">
+        <!--<lt-tip :tipData="'succQuoteTip'">
             啊车牌号啊睡觉的垃圾
-        </ymt-tip>-->
+        </lt-tip>-->
 
         <div class="des">
             <h3>组件说明</h3>
@@ -19,7 +19,7 @@
   组件名称：YmtTip
 
   样式说明：
-  1.ymt-tip
+  1.lt-tip
   2.quote-tip
   3.succ-quote-tip
 

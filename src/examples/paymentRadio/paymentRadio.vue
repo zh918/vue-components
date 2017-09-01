@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<ymt-payment-radio @itemChoose="handelChange" :initialOption="'alipay'"></ymt-payment-radio>
+		<lt-payment-radio @itemChoose="handelChange" :initialOption="'alipay'"></lt-payment-radio>
 		<div class="des">
 			<h3>组件说明</h3>
 			<p>
@@ -8,7 +8,7 @@
   组件名称：ymtPaymentRadio
 
   样式说明：
-  1.ymt-payment-radio
+  1.lt-payment-radio
 
   事件绑定：
   @itemChoose="选项改变事件", 在回调函数中可获取到选择的是哪种支付方式
@@ -29,7 +29,7 @@
 	export default {
 		data() {
 			return {
-				rawHtml: `<ymt-payment-radio @itemChoose="handelChange"></ymt-payment-radio>`
+				rawHtml: `<lt-payment-radio @itemChoose="handelChange"></lt-payment-radio>`
 			}
 		},
 		methods: {

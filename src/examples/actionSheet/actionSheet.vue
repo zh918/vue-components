@@ -3,8 +3,8 @@
 
 	<button @click="handleShowCity">城市</button>
 	<button @click="handleShowCityArea">区号</button>
-	<ymt-action-sheet :initData="_initData" @close="handleClose" @change="handleChange" @closeShade="handleCityCloseShade"></ymt-action-sheet>
- 	<ymt-city-area :initData="initCityAreaData" @close="handleClose" @change="handleChange" @closeShade="handleCityAreaCloseShade"></ymt-city-area>
+	<lt-action-sheet :initData="_initData" @close="handleClose" @change="handleChange" @closeShade="handleCityCloseShade"></lt-action-sheet>
+ 	<lt-city-area :initData="initCityAreaData" @close="handleClose" @change="handleChange" @closeShade="handleCityAreaCloseShade"></lt-city-area>
 </div>
 
 

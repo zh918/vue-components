@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<ymt-radios></ymt-radios>
+		<lt-radios></lt-radios>
 		<div class="des">
 			<h3>组件说明</h3>
 			<p>
@@ -8,7 +8,7 @@
   组件名称：ymtRadio
 
   样式说明：
-  1.ymt-radio
+  1.lt-radio
 
   事件绑定：
   @itemChoose="选项改变事件", 在回调函数中
@@ -31,8 +31,8 @@
 	export default {
 		data() {
 			return {
-				rawHtml: `<ymt-payment-radio @itemChoose="handelChange">
-</ymt-payment-radio>`
+				rawHtml: `<lt-payment-radio @itemChoose="handelChange">
+</lt-payment-radio>`
 			}
 		},
 		methods: {

@@ -1,8 +1,8 @@
 <template>
 	<div class="no-network" v-if="isShow">
-		<ymt-bar-nav> 
+		<lt-bar-nav> 
 			  <div>网络异常</div> 
-	   	</ymt-bar-nav>
+	   	</lt-bar-nav>
 	
 		<div class="content">
 			<div class="content-img">
@@ -12,7 +12,7 @@
 				数据加载失败
 			</div>
 			<div class="content-button">
-				<ymt-button @click="handleClick">重新加载</ymt-button> 
+				<lt-button @click="handleClick">重新加载</lt-button> 
 			</div>
 		</div>	
 
@@ -20,8 +20,8 @@
 </template> 
 <script type="text/javascript">
 	import Vue from 'vue'
-	export default Vue.component('ymt-no-network',{
-		name:'YmtNoNetwork',
+	export default Vue.component('lt-no-network',{
+		name:'LtNoNetwork',
 		props:['isShow'],
 		// data() {
 		// 	return {

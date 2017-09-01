@@ -1,5 +1,5 @@
 <template>
-	<div class="ymt-upload-img">
+	<div class="lt-upload-img">
 		<input type="file" ref="image_uploads" class="image-uploads-input" accept="image/*"  @change="handleFileChange">
 		<div class="select-file-plus" @click.stop="handleClick">
 			<slot name="icon">+</slot>
@@ -10,8 +10,8 @@
 <script>
 	import Vue from 'vue'
 
-	export default Vue.component('ymt-upload-img',{
-		name:'YmtUploadImg',  
+	export default Vue.component('lt-upload-img',{
+		name:'LtUploadImg',  
 		methods: {
 			handleClick(e) { 
 				console.log('handleClick');

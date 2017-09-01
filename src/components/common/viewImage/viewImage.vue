@@ -1,5 +1,5 @@
 <template>
-	<ymt-shade>
+	<lt-shade>
 		<div class="view-image" @click="handleClick">
 			<div class="image" ref="containerImg">
 				<slot name="img"></slot>
@@ -8,15 +8,15 @@
 				<slot name="footer"></slot>
 			</div>
 		</div>
-	</ymt-shade> 
+	</lt-shade> 
 </template>
 
 <script type="text/javascript">
 	import Vue from 'vue'
 	import Hammer from '../../../../ref/hammer/hammer'
 
-	export default Vue.component('ymt-view-image',{
-		name:'YmtViewImage',  
+	export default Vue.component('lt-view-image',{
+		name:'LtViewImage',  
 		data(){
 			return {
 				hammerManager:null

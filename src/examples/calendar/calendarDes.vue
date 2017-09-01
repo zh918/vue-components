@@ -58,7 +58,7 @@ initData=>{
 	export default {
 		data(){
 			return {
-				rawHtml:`<ymt-calendar :initData="initData" @click="handleClickDay" @scroll="handleScroll"></ymt-calendar>`
+				rawHtml:`<lt-calendar :initData="initData" @click="handleClickDay" @scroll="handleScroll"></lt-calendar>`
 			}
 		}
 	}

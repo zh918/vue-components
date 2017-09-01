@@ -1,19 +1,19 @@
 <template>
 <div>
-   <ymt-input title="用户名" placeholder="请录入用户名" 
+   <lt-input title="用户名" placeholder="请录入用户名" 
         ref="input"
         :disabled="flag"  
         :value="v"
         :maxlength="3"
         @blur="handleBlur" 
         @focus="handleFocus" 
-        @change="handleChange"></ymt-input>
-   <ymt-input title="用户名" value="赵柳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" @touch="handleTouch" :disabled="true" arrow="true">
+        @change="handleChange"></lt-input>
+   <lt-input title="用户名" value="赵柳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" @touch="handleTouch" :disabled="true" arrow="true">
      <div slot="arrow">12</div>
-   </ymt-input>
+   </lt-input>
 
 
-    <ymt-button @click="handleClick">测试按钮</ymt-button> 
+    <lt-button @click="handleClick">测试按钮</lt-button> 
 
 <div class="des">
 <h3>组件说明</h3>
@@ -22,7 +22,7 @@
   组件名称：YmtInput
 
   样式说明：
-  1.ymt-input 
+  1.lt-input 
   2.text-right 录入文本右对齐
   3.text-left 录入文本左对齐
 
@@ -51,10 +51,10 @@ export default {
 		return {
       flag:false,
       v:null,
-			rawHtml:`<ymt-input 
+			rawHtml:`<lt-input 
       title="用户名" 
       placeholder="请录入用户名"  
-      @change="handleChange"></ymt-input>`
+      @change="handleChange"></lt-input>`
 		}
 	},
     methods:{

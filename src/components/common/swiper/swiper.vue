@@ -11,7 +11,7 @@
     import Vue from 'vue'
     import swiper from 'swiper'
     import 'swiper/dist/css/swiper.min.css'
-    export default Vue.component('ymt-swiper', {
+    export default Vue.component('lt-swiper', {
         name: 'ymtSwiper',
         props: ['dataList'],
         data() {

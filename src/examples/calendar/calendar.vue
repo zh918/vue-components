@@ -1,6 +1,6 @@
 <template>
 <div> 
-  <ymt-calendar :initData="initData" @click="handleClickDay" @scroll="handleScroll"></ymt-calendar>
+  <lt-calendar :initData="initData" @click="handleClickDay" @scroll="handleScroll"></lt-calendar>
  
 </div> 
 </template>
@@ -9,10 +9,10 @@
 export default { 
 	data(){
 		return {
-			rawHtml:`<ymt-input 
+			rawHtml:`<lt-input 
       title="用户名" 
       placeholder="请录入用户名"  
-      @change="handleChange"></ymt-input>`,
+      @change="handleChange"></lt-input>`,
       initData:null
 		}
 	},

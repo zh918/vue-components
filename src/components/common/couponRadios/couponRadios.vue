@@ -1,7 +1,7 @@
 <template>
 	<div class="coupon-list-bg">
 
-		<div class="ymt-radios coupon-wrapper" v-for="(coupon, key) in testData">
+		<div class="lt-radios coupon-wrapper" v-for="(coupon, key) in testData">
 			<label :for="key" @click="changeState(key,coupon)">
 				<i class="icon iconfont" :class=" coupon.isActive ? 'icon-check02' : 'icon-uncheak02' "></i>
 				<input :id="key" :value="key" type="radio" name="coupon" hidden/>
@@ -27,7 +27,7 @@
 	// 模块引入
 	// 对象接口
 	import Vue from 'vue'
-	export default Vue.component('ymt-coupon-radios', {
+	export default Vue.component('lt-coupon-radios', {
 		props: ['testData'],
 		data() {
 			return {
@@ -146,23 +146,23 @@
 		padding-bottom: 24/20rem;
 	}
 
-	.ymt-radios {
+	.lt-radios {
 		font-size: 1.5rem;
 	}
 
-	.ymt-radios .icon {
+	.lt-radios .icon {
 		font-size: 1.8rem;
 	}
 
-	.ymt-radios .icon-check02 {
+	.lt-radios .icon-check02 {
 		color: #FF7800;
 	}
 
-	.ymt-radios .icon-uncheak02 {
+	.lt-radios .icon-uncheak02 {
 		color: #aeaeae;
 	}
 
-	.ymt-radios input {
+	.lt-radios input {
 		display: none;
 	}
 
@@ -185,7 +185,7 @@
 		height: 75/20rem;
 	}
 
-	.ymt-radios label {
+	.lt-radios label {
 		display: flex;
         display: -webkit-flex;
         align-items: center;

@@ -1,7 +1,7 @@
 <template>
     <div class="checkbox-wrapper">
         <label :for="randomID">
-			<div for="ee" class="ymt-checkbox" :class="[ifChecked ? 'checked' : 'un-checked']">
+			<div for="ee" class="lt-checkbox" :class="[ifChecked ? 'checked' : 'un-checked']">
 				<i class="iconfont icon-photo_complete"></i>
 			</div>
 			<input :id="randomID" type="checkbox" v-model="ifChecked" name="" value="" />
@@ -12,7 +12,7 @@
     // 模块引入
     // 对象接口
     import Vue from 'vue'
-    export default Vue.component('ymt-checkbox', {
+    export default Vue.component('lt-checkbox', {
         props: {
             model: {
                 default: true,

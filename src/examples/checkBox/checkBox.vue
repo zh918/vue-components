@@ -2,9 +2,9 @@
 	<div>
 		<div class="test">
 			羽毛球
-			<ymt-checkbox :model="test" @change="valueChange1"></ymt-checkbox>
+			<lt-checkbox :model="test" @change="valueChange1"></lt-checkbox>
 			篮球
-			<ymt-checkbox :model="test" @change="valueChange2"></ymt-checkbox>
+			<lt-checkbox :model="test" @change="valueChange2"></lt-checkbox>
 		</div>
 
 		<div class="des">
@@ -14,7 +14,7 @@
   组件名称：ymtCheckbox
 
   样式说明：
-  1.ymt-checkbox
+  1.lt-checkbox
 
   事件绑定：
   @change="input框状态改变事件", 在回调函数中
@@ -37,7 +37,7 @@
 	export default {
 		data() {
 			return {
-				rawHtml: `<ymt-tab>
+				rawHtml: `<lt-tab>
 		<tab-header>
 			<header-item></header-item>
 			<header-item></header-item>
@@ -46,7 +46,7 @@
 			<content-item></content-item>
 			<content-item></content-item>
 		</tab-content>
-	</ymt-tab>`,
+	</lt-tab>`,
 				test: false,
 			}
 		},

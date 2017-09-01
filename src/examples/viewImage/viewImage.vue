@@ -1,16 +1,16 @@
 <template>
 <div>
-   <ymt-button @click="handleView">查看照片</ymt-button> 
-   <ymt-button @click="handleResetView">查看并重拍照片</ymt-button> 
+   <lt-button @click="handleView">查看照片</lt-button> 
+   <lt-button @click="handleResetView">查看并重拍照片</lt-button> 
   
-   <ymt-view-image  v-if="isView" @close="handleClose">
+   <lt-view-image  v-if="isView" @close="handleClose">
    		<img ref="img" src="../../assets/11.png" alt="" slot="img">
-   </ymt-view-image>
+   </lt-view-image>
  
- 	<ymt-view-image v-if="isResetView" @close="handleClose">
+ 	<lt-view-image v-if="isResetView" @close="handleClose">
    		<img src="../../assets/11.png" alt="" slot="img" >
-   		<ymt-button slot="footer" @click="handleResetClick">重拍</ymt-button> 
-   </ymt-view-image>
+   		<lt-button slot="footer" @click="handleResetClick">重拍</lt-button> 
+   </lt-view-image>
 
 </div>
 

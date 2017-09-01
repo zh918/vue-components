@@ -1,5 +1,5 @@
 <template>
-    <div class="ymt-company-strategy">
+    <div class="lt-company-strategy">
 
         <ul v-for="(supplierLists, row) in companyList" class="type-list" :class="{'centeralign': companyCenterAlign[row],'normalalign clearfix': !companyCenterAlign[row]}">
             <li class="company-log" v-for="(supplierList,column) in supplierLists">
@@ -24,8 +24,8 @@
 
 <script type="text/javascript">
     import Vue from 'vue'
-    export default Vue.component('ymt-company-strategy', {
-        name: 'YmtCompanyStrategy',
+    export default Vue.component('lt-company-strategy', {
+        name: 'LtCompanyStrategy',
         props: ['supplierArrays'],
         data() {
             return {

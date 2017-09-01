@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App'
 import YmtUI from './components'
-// import YmtUI from '../ymt-ui/static'
+// import YmtUI from '../lt-ui/static'
 import {injectGlobal} from './common/inject'
 import router from './router'  
 

@@ -2,10 +2,10 @@
 <div> 
 	<button @click="handleClick">切换车辆</button>
 	<button @click="handleClickNoNetwork">无网络</button>
- 	<ymt-cars :initData="initData" 
+ 	<lt-cars :initData="initData" 
  				 v-if="initData.isShow"
  				 @change="handleChange"
- 				 @close="handleClose"></ymt-cars> 
+ 				 @close="handleClose"></lt-cars> 
 </div>
 
 

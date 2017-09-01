@@ -1,4 +1,4 @@
-import YmtNoNetwork from './noNetworkComponent'
+import LtNoNetwork from './noNetworkComponent'
 
 export default class NoNetwork {
 	static install(Vue, options) { 
@@ -17,7 +17,7 @@ export default class NoNetwork {
 			  render (createElement) {
 			  	let _this = this;
 			    return createElement(
-			      YmtNoNetwork,    
+			      LtNoNetwork,    
 			      {
 			      	props:{
 			      		isShow:_this.currentShowVal

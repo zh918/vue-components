@@ -1,28 +1,28 @@
-const YmtProcessBar = {};
-YmtProcessBar.install = (Vue, options) => {
+const LtProcessBar = {};
+LtProcessBar.install = (Vue, options) => {
     Vue.prototype.$start = ()=> {
-        let processbal = document.querySelector(".ymt-processbar");
+        let processbal = document.querySelector(".lt-processbar");
         if (processbal) {
-            processbal.className = "ymt-processbar ymt-processbar-part";
+            processbal.className = "lt-processbar lt-processbar-part";
         } 
         else {
             let processBarEle = document.createElement("div");
-            processBarEle.className = "ymt-processbar";
+            processBarEle.className = "lt-processbar";
             document.body.appendChild(processBarEle);
 
             console.log("进度条开始");
-            processBarEle.className = "ymt-processbar ymt-processbar-part";            
+            processBarEle.className = "lt-processbar lt-processbar-part";            
         }
     };
 
     Vue.prototype.$finish = ()=> {
-        let processbal = document.querySelector(".ymt-processbar");
+        let processbal = document.querySelector(".lt-processbar");
         if (processbal) {
             console.log("进度条结束");
-            processbal.className = "ymt-processbar ymt-processbar-all";            
+            processbal.className = "lt-processbar lt-processbar-all";            
         }
     }
 }
 
-export default YmtProcessBar
+export default LtProcessBar
 

@@ -24,7 +24,7 @@ import popup from './common/popup/popup'
 import calendar from './common/calendar/calendar'
 import companyStrategy from './common/companyStrategy/companyStrategy'
 import swiper from './common/swiper/swiper'
-import YmtProcessBar from './common/processBar/processBar'
+import LtProcessBar from './common/processBar/processBar'
 import actionSheet from './common/actionSheet/actionSheet'
 import area from './common/actionSheet/area'
 import shade from './common/shade/shade'
@@ -35,7 +35,7 @@ import viewImage from './common/viewImage/viewImage'
 import NoNetwork from './common/NoNetwork/noNetwork'
 import uploadImg from './common/file/uploadImg'
 
-const YmtUI = {
+const LtUI = {
 	version:'1.0.0',
 	button,
 	input,
@@ -57,7 +57,7 @@ const YmtUI = {
 	swiper,
 	shade,
 	cars,
-	YmtProcessBar:Vue.use(YmtProcessBar),
+	LtProcessBar:Vue.use(LtProcessBar),
 	message:Vue.use(message),
 	tip,
 	viewImage,
@@ -65,6 +65,6 @@ const YmtUI = {
 	uploadImg
 }
 
-export default YmtUI
+export default LtUI
 
 

@@ -1,44 +1,44 @@
 <template>
 <div class="examples-list">
-   <ymt-list>
+   <lt-list>
      <list-group>
        <group-title>车主信息</group-title>
        <list-item>
-         <ymt-input class="text-right" title="行驶城市" value="深圳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" disabled ></ymt-input>
+         <lt-input class="text-right" title="行驶城市" value="深圳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" disabled ></lt-input>
        </list-item>
        <list-item>
-        <ymt-input title="车主" placeholder="录入车主姓名"  @blur="handleBlur" @focus="handleFocus" @change="handleChange"></ymt-input>
+        <lt-input title="车主" placeholder="录入车主姓名"  @blur="handleBlur" @focus="handleFocus" @change="handleChange"></lt-input>
        </list-item>
        <list-item>
-        <ymt-input class="text-right" title="身份证号" value="456789789789789789" disabled ></ymt-input>
+        <lt-input class="text-right" title="身份证号" value="456789789789789789" disabled ></lt-input>
        </list-item>
      </list-group>  
      <list-space></list-space>
      <list-group>
        <group-title class="center">车主信息</group-title>
        <list-item>
-         <ymt-input class="text-right" title="行驶城市" value="深圳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" disabled ></ymt-input>
+         <lt-input class="text-right" title="行驶城市" value="深圳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" disabled ></lt-input>
        </list-item>
        <list-item>
-        <ymt-input class="text-right" title="车主" placeholder="录入车主姓名"  @blur="handleBlur" @focus="handleFocus" @change="handleChange"></ymt-input>
+        <lt-input class="text-right" title="车主" placeholder="录入车主姓名"  @blur="handleBlur" @focus="handleFocus" @change="handleChange"></lt-input>
        </list-item>
        <list-item>
-        <ymt-input class="text-right" title="身份证号" value="456789789789789789" disabled ></ymt-input>
+        <lt-input class="text-right" title="身份证号" value="456789789789789789" disabled ></lt-input>
        </list-item>
      </list-group> 
      <list-group>
        <group-title class="right">车主信息</group-title>
        <list-item>
-         <ymt-input class="text-right" title="行驶城市" value="深圳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" disabled ></ymt-input>
+         <lt-input class="text-right" title="行驶城市" value="深圳"  @blur="handleBlur" @focus="handleFocus" @change="handleChange" disabled ></lt-input>
        </list-item>
        <list-item>
-        <ymt-input class="text-right" title="车主" placeholder="录入车主姓名"  @blur="handleBlur" @focus="handleFocus" @change="handleChange"></ymt-input>
+        <lt-input class="text-right" title="车主" placeholder="录入车主姓名"  @blur="handleBlur" @focus="handleFocus" @change="handleChange"></lt-input>
        </list-item>
        <list-item>
-        <ymt-input class="text-right" title="身份证号" value="456789789789789789" disabled ></ymt-input>
+        <lt-input class="text-right" title="身份证号" value="456789789789789789" disabled ></lt-input>
        </list-item>
      </list-group>     
-   </ymt-list>
+   </lt-list>
  
 
   <div class="des">
@@ -74,14 +74,14 @@
 export default { 
 	data(){
 		return {
-			rawHtml:`<ymt-list>
+			rawHtml:`<lt-list>
      <list-group>
        <group-title></group-title>
        <list-item></list-item>
        <list-item></list-item>       
      </list-group>
      <list-space></list-space>
-   </ymt-list>`
+   </lt-list>`
 		}
 	},
     methods:{

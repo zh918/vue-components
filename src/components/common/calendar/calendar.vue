@@ -1,6 +1,6 @@
 <template>
-	<div class="ymt-calendar">
-		<div class="ymt-calendar-week">
+	<div class="lt-calendar">
+		<div class="lt-calendar-week">
 			<div class="week-item">日</div>
 			<div class="week-item">一</div>
 			<div class="week-item">二</div>
@@ -9,18 +9,18 @@
 			<div class="week-item">五</div>
 			<div class="week-item">六</div>
 		</div>
-		<div class="ymt-calendar-content" @scroll="_handleScroll" v-if="calendarGroupData">
+		<div class="lt-calendar-content" @scroll="_handleScroll" v-if="calendarGroupData">
 			<div :id="'ymt_calendar_' + item.monthValue"
-				 class="ymt-calendar-body"  
+				 class="lt-calendar-body"  
 				 v-for="item in calendarGroupData" >
-				<div class="ymt-calendar-moth" :data-month="item.month">
+				<div class="lt-calendar-moth" :data-month="item.month">
 					{{item.month}}
 				</div>
-				<div class="ymt-calendar-day" 
+				<div class="lt-calendar-day" 
 					 v-for="day in _calendarDaysByMonth(item.month)"  
 					 :class="_setCalendarDayClass(day.dayStatus,day.changeStatus)" 
 					 @click="_handleClickDay(day)">
-					<div class="ymt-calendar-number">{{day.isNow ? '今天' : day.d}}</div>
+					<div class="lt-calendar-number">{{day.isNow ? '今天' : day.d}}</div>
 					<div class="icon-selecting" v-if="day.changeStatus == 1">开</div>
 					<div class="icon-drive" v-if="day.changeStatus == 2 || day.changeStatus == 4"></div>
 					<div class="icon-cancel" v-if="day.changeStatus == 3">取消</div>
@@ -57,7 +57,7 @@
 		// 不可取消开车  UnCancel （备注：before之前状态 after之后保单生成中）		
 	};
 
-	export default Vue.component('YmtCalendar',{ 
+	export default Vue.component('LtCalendar',{ 
 		data() {
 			return {
 				dateArray: [],
@@ -84,7 +84,7 @@
 					});
 				}  
 
-				document.querySelector(".ymt-calendar-content").scrollTop = pointScrollTopValue; 				
+				document.querySelector(".lt-calendar-content").scrollTop = pointScrollTopValue; 				
 			}
 
 		},
@@ -94,7 +94,7 @@
 				return !this._props.initData.checkPolicyStatus && changeStatus == 4 ? 'after-status after-uncancel' :
 					dayStatus == -1 && changeStatus == 0 ? 'before-status' : 
 					dayStatus == -1 && changeStatus == 2 ? 'before-status before-status-drive' :
-					dayStatus == -1 && changeStatus == 3 ? 'before-status before-uncancel cancel ymt-day-bg-2' : // 20170815补
+					dayStatus == -1 && changeStatus == 3 ? 'before-status before-uncancel cancel lt-day-bg-2' : // 20170815补
 					dayStatus == -1 && changeStatus == 4 ? 'before-status before-status-drive before-uncancel ' : // 20170824补before-status-drive
 					dayStatus == 1  && changeStatus == 0 ? 'after-status' :
 					dayStatus == 1  && changeStatus == 1 ? 'after-status actived' :

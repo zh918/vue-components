@@ -1,10 +1,10 @@
 <template>
 	<div class="container">
 		<div class="header">
-			<ymt-bar-nav>
+			<lt-bar-nav>
 		      <div slot='left'  @click="handleLeftClick">菜单</div>
-				  <div>易秒通组件库v1.0</div> 
-		   </ymt-bar-nav>
+				  <div>vue组件库v1.0</div> 
+		   </lt-bar-nav>
 		</div>
 		<div class="content">
 			<div class="left"> 

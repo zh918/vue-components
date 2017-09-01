@@ -1,8 +1,8 @@
 <template>
 
-    <transition name="ymt-fade">
+    <transition name="lt-fade">
         <div class="popup-mask" @touchmove.prevent>
-            <transition name="ymt-transform">
+            <transition name="lt-transform">
                 <div class="popup-window" :class="[getpopupParam.class ? getpopupParam.class : '']">
                     <img :src="getpopupParam.iconType" alt="" />
                     <p class="popup-window-title">{{this.getpopupParam.title}}</p>
@@ -33,7 +33,7 @@
      **/
 
     import Vue from 'vue'
-    export default Vue.component('ymt-popup', {
+    export default Vue.component('lt-popup', {
         props: {
             popupParam: {},
         },
@@ -179,23 +179,23 @@
     }
     /*效果*/
 
-    .ymt-fade-enter-active,
-    .ymt-fade-leave-active {
+    .lt-fade-enter-active,
+    .lt-fade-leave-active {
         transition: all .5s
     }
 
-    .ymt-fade-enter,
-    .ymt-fade-leave-active {
+    .lt-fade-enter,
+    .lt-fade-leave-active {
         opacity: 0;
     }
 
-    .ymt-transform-enter-active,
-    .ymt-transform-leave-active {
+    .lt-transform-enter-active,
+    .lt-transform-leave-active {
         transition: all .5s
     }
 
-    .ymt-transform-enter,
-    .ymt-transform-leave-active {
+    .lt-transform-enter,
+    .lt-transform-leave-active {
         transform: scale(0, 0);
         transform-origin: 50% 50%;
     }

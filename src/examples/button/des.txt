@@ -1,9 +1,9 @@
 组件名称：YmtButton
 
 样式说明：
-1.ymt-btn
-2.ymt-btn-small
-3.ymt-btn-big
+1.lt-btn
+2.lt-btn-small
+3.lt-btn-big
 4.btn-success
 5.btn-danger
 ...
@@ -15,7 +15,7 @@
 
 
 常见用法
-<ymt-button @click="handleClick" class="ymt-btn-big">测试按钮</ymt-button>
+<lt-button @click="handleClick" class="lt-btn-big">测试按钮</lt-button>
 
 更新日志：
 2017-06-12

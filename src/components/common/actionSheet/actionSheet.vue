@@ -1,5 +1,5 @@
 <template>
-	<ymt-shade v-if="initData.isShow" @closeShade="handleClose">
+	<lt-shade v-if="initData.isShow" @closeShade="handleClose">
 		<div class="city" v-if="initData.isShow">
 			<div class="title">
 				{{initData.title}}
@@ -11,13 +11,13 @@
 				:class="{'actived':item.isDefault}"
 				@click="handleChangeItem(item)">{{item.key}}</div>
 		</div>
-	</ymt-shade>
+	</lt-shade>
 </template>
 <script>
 	import Vue from 'vue'
 
-	export default Vue.component("YmtActionSheet",{
-		name:"YmtActionSheet",
+	export default Vue.component("LtActionSheet",{
+		name:"LtActionSheet",
 		props:['initData'],
 		data() {
 			return {

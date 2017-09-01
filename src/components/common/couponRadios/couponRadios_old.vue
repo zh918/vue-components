@@ -20,7 +20,7 @@
 </template>
 <script> 
 	import Vue from 'vue'
-	export default Vue.component('ymt-coupon', {
+	export default Vue.component('lt-coupon', {
 		props: ['couponList'],   
 		methods: { 
 			handleClick(item) {

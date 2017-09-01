@@ -1,5 +1,5 @@
 <template>
-	<div class="ymt-bar-nav">
+	<div class="lt-bar-nav">
 		<div class="left">
 			<slot name="left"></slot>
 		</div>	
@@ -16,7 +16,7 @@
 <script>
 	import Vue from 'vue'
 
-	export default Vue.component('YmtBarNav',{
-		name:'YmtBarNav',
+	export default Vue.component('LtBarNav',{
+		name:'LtBarNav',
 	})
 </script>

@@ -1,17 +1,17 @@
 <template>
 	<div>
-		<ymt-popup
+		<lt-popup
 			v-if="popFlag1"
 			:popupParam="popParm1"
 			@cancelFn="handelCancel"
 			@confirmFn="handelConfirm">
-		</ymt-popup>
-		<!--<ymt-popup
+		</lt-popup>
+		<!--<lt-popup
 			v-if="popFlag2"
 			:popupParam="popParm2"
 			@cancelFn="handelCancel2"
 			@confirmFn="handelConfirm2">
-		</ymt-popup>-->
+		</lt-popup>-->
 		<button style="width: 100px; height: 50px; font-size: 22px;" @click="test">点我</button>
 		<div class="des">
 			<h3>组件说明</h3>
@@ -20,7 +20,7 @@
   组件名称：ymtPopup
 
   样式说明：
-  1.ymt-popup
+  1.lt-popup
 
   事件绑定：
   @itemChoose="选项改变事件", 在回调函数中
@@ -51,11 +51,11 @@
 	export default {
 		data() {
 			return {
-				rawHtml: `<ymt-popup v-if="popupShow"
+				rawHtml: `<lt-popup v-if="popupShow"
 	:popupParam="popupInitial"
 	@cancelFn="handelCancel"
 	@confirmFn="handelConfirm">
-</ymt-popup>`,
+</lt-popup>`,
 				popParm1 : {
 					popupType: "phone",
                     title: "动了保客服",

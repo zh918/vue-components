@@ -1,10 +1,10 @@
 <template>
 <div>
-   <ymt-bar-nav>
+   <lt-bar-nav>
       <div slot='left'  @click="handleLeftClick">回退</div>
 		  <div>自定义保障套餐</div>
 		  <div slot="right" @click="handleRightClick">完成</div>
-   </ymt-bar-nav>
+   </lt-bar-nav>
 
 <div class="des">
 <h3>组件说明</h3>
@@ -13,7 +13,7 @@
   组件名称：YmtBarNav
 
   样式说明：
-  1.ymt-bar-nav
+  1.lt-bar-nav
 
   事件绑定：
 	@clickLeft 左侧按钮点击事件

@@ -1,8 +1,8 @@
 <template>
 <div class="content-wrap">
 
-    <ymt-button @click="startProcessBar" class="ymt-btn-big">启动进度条</ymt-button>
-    <ymt-button @click="finishProcessBar" class="ymt-btn-big">结束进度条</ymt-button>
+    <lt-button @click="startProcessBar" class="lt-btn-big">启动进度条</lt-button>
+    <lt-button @click="finishProcessBar" class="lt-btn-big">结束进度条</lt-button>
 
     <div class="des">
         <h3>组件说明</h3>
@@ -10,7 +10,7 @@
 <pre>
 组件名称：ymtProcessBar
 
-样式说明：ymt-processbar
+样式说明：lt-processbar
 
 
 常见用法：

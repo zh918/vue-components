@@ -1,8 +1,8 @@
 <template>
 	<div class="examples-upload-img">
-		<ymt-upload-img @change="handleChangeImg">
+		<lt-upload-img @change="handleChangeImg">
 			<div slot="icon">點擊上傳圖片</div>
-		</ymt-upload-img>
+		</lt-upload-img>
 	</div>
 </template>
 
