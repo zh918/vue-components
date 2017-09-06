@@ -23,7 +23,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
-    path: path.resolve(__dirname, '../ymt-ui'),
+    path: path.resolve(__dirname, '../LTUI'),
     filename: "[name].js",
     library: "[name]",
     libraryTarget: "umd"

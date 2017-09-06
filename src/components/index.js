@@ -34,6 +34,7 @@ import tip from './common/tip/tip'
 import viewImage from './common/viewImage/viewImage'
 import NoNetwork from './common/NoNetwork/noNetwork'
 import uploadImg from './common/file/uploadImg'
+import playGroup from './common/playGroup/playGroup'
 
 const LtUI = {
 	version:'1.0.0',
@@ -62,7 +63,8 @@ const LtUI = {
 	tip,
 	viewImage,
 	noNetwork:Vue.use(NoNetwork),
-	uploadImg
+	uploadImg,
+	playGroup
 }
 
 export default LtUI

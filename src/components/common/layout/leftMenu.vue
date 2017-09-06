@@ -22,6 +22,7 @@
         <li><router-link :to="{path:'/tip'}" replace>tip</router-link></li>
         <li><router-link :to="{path:'/viewImage'}" replace>viewImage</router-link></li>
         <li><router-link :to="{path:'/file'}" replace>资源上传</router-link></li>
+        <li><router-link :to="{path:'/playGroup'}" replace>分类列表</router-link></li>
       </ul>
     </div>
 </template>

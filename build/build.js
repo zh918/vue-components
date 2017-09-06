@@ -7,7 +7,9 @@ var config = require('../config')
 var webpackConfigProd = require('./webpack.prod.conf')
 var webpackConfigLibrary = require('./webpack.library.conf')
 var moment = require('moment')
+// var configArray = [webpackConfigLibrary,webpackConfigProd]
 var configArray = [webpackConfigLibrary,webpackConfigProd]
+
 
 var compiler = webpack(configArray);
  
