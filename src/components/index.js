@@ -64,7 +64,7 @@ const LtUI = {
 	viewImage,
 	noNetwork:Vue.use(NoNetwork),
 	uploadImg,
-	playGroup
+	// playGroup
 }
 
 export default LtUI
