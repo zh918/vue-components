@@ -13,7 +13,7 @@ var configArray = [webpackConfigLibrary,webpackConfigProd]
 
 var compiler = webpack(configArray);
  
-console.log('易秒通组件库已开始处理打包，请稍等...\n')
+console.log('LT组件库已开始处理打包，请稍等...\n')
 var startTime = moment(Date.now())
  
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
@@ -54,7 +54,7 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
 		    }) + '\n\n')
 		} 
 
-		console.log('易秒通组件库打包结束')
+		console.log('LT组件库打包结束')
    }); 
 })	
 
